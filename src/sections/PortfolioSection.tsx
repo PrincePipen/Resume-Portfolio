@@ -178,6 +178,12 @@ const ProjectCard = ({
             </span>
           ))}
         </div>
+        
+        {/* Mobile tap indicator - only visible on mobile */}
+        <div className="mt-4 text-center text-sm text-muted-foreground bg-secondary/50 py-2 rounded-lg block md:hidden">
+          <i className="fa-solid fa-hand-pointer mr-2"></i>
+          Tap to view project details
+        </div>
       </div>
     </motion.div>
   );
