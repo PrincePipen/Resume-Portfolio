@@ -38,7 +38,7 @@ const AboutSection = () => {
               <div className="absolute top-0 left-0 w-full h-full bg-primary/10 rounded-tl-3xl rounded-br-3xl transform rotate-6"></div>
               <div className="absolute inset-0 overflow-hidden rounded-tl-3xl rounded-br-3xl border-4 border-secondary shadow-xl bg-card">
                 <img
-                  src="https://placehold.co/600x800/3b82f6/ffffff.png?text=About&font=opensans"
+                  src="/assets/images/cOd.png"
                   alt="About Me"
                   className="w-full h-full object-cover"
                 />
