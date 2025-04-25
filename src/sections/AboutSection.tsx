@@ -80,36 +80,23 @@ const AboutSection = () => {
               I believe in building solutions that balance technical excellence with intuitive user experience, and I'm eager to apply my skills in a professional environment that values innovation and growth.
             </motion.p>
 
-            {/* Personal Info */}
+            {/* Personal Info - Only showing relevant info without contact details */}
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4"
               variants={fadeIn}
               transition={{ duration: 0.5 }}
             >
               <div>
                 <p className="mb-2"><strong>Name:</strong> Prince Stephen Lacsa</p>
-                <p className="mb-2"><strong>Email:</strong> princepipen@gmail.com</p>
-                <p className="mb-2"><strong>Phone:</strong> +63 995 631 7375</p>
+                <p className="mb-2"><strong>Location:</strong> Cavite City, Philippines</p>
               </div>
               <div>
-                <p className="mb-2"><strong>Location:</strong> Cavite City, Philippines</p>
                 <p className="mb-2"><strong>Degree:</strong> BS Computer Science</p>
                 <p className="mb-2"><strong>Languages:</strong> English, Filipino</p>
               </div>
             </motion.div>
-            
-            <motion.a
-              href="#contact"
-              className="inline-flex items-center px-5 py-3 bg-primary text-primary-foreground rounded-lg font-medium shadow-lg hover:bg-primary/90 transition-colors"
-              variants={fadeIn}
-              transition={{ duration: 0.5 }}
-            >
-              <i className="fa-solid fa-envelope mr-2" /> Contact Me
-            </motion.a>
           </div>
         </motion.div>
-
-        {/* Stats section has been removed */}
       </div>
     </section>
   );
