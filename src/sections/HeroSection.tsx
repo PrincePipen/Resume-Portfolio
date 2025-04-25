@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 pb-16 px-4 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-20 pb-28 sm:pb-32 md:pb-20 px-4 overflow-hidden"
     >
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_120%,rgba(0,101,255,0.1),rgba(120,0,255,0.05),rgba(0,0,0,0))]" />
 
@@ -16,7 +16,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left order-2 lg:order-1"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
               Hello, I'm <span className="text-primary">Prince Stephen</span>
@@ -59,9 +59,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-end order-1 lg:order-2 mb-8 lg:mb-0"
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-primary/20 to-primary/30 flex items-center justify-center">
+            <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-r from-primary/20 to-primary/30 flex items-center justify-center">
               <div className="absolute inset-2 rounded-full overflow-hidden bg-secondary flex items-center justify-center shadow-inner">
                 <img
                   src="/assets/images/profile.jpg"
@@ -73,19 +73,21 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Scroll down indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
-          whileHover={{ scale: 1.1 }}
-        >
-          <a href="#about" className="flex flex-col items-center">
-            <span className="text-sm font-medium text-muted-foreground mb-2">Scroll Down</span>
-            <i className="fa-solid fa-chevron-down text-primary animate-bounce" />
-          </a>
-        </motion.div>
+        {/* Improved scroll down indicator positioning */}
+        <div className="relative w-full flex justify-center mt-8 mb-4">
+          <motion.div
+            className="cursor-pointer"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            whileHover={{ scale: 1.1 }}
+          >
+            <a href="#about" className="flex flex-col items-center">
+              <span className="text-sm font-medium text-muted-foreground mb-2">Scroll Down</span>
+              <i className="fa-solid fa-chevron-down text-primary animate-bounce" />
+            </a>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
