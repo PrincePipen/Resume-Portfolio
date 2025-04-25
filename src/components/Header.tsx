@@ -65,9 +65,9 @@ const Header = () => {
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#home" onClick={() => scrollToSection('home')} className="text-xl font-bold text-foreground hover:text-primary transition-colors">
-          <span className="text-primary">Port</span>folio
-        </a>
+        <span className="text-xl font-bold text-foreground">
+          Prince Stephen Lacsa
+        </span>
 
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
