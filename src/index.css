@@ -84,3 +84,24 @@ body {
     text-wrap: balance;
   }
 }
+
+/* PDF resume styles */
+.pdf-container {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Print-specific styles */
+@media print {
+  .pdf-container {
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+}
