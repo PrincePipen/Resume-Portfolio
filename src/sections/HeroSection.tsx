@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import ResumeButton from '../components/ResumeButton';
 
 const HeroSection = () => {
   return (
@@ -51,6 +52,7 @@ const HeroSection = () => {
               >
                 View Portfolio
               </a>
+              <ResumeButton />
             </div>
           </motion.div>
 
